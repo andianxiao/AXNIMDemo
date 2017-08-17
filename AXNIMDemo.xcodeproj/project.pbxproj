@@ -14,9 +14,12 @@
 		8A2F430E1F457C1800448887 /* AXNIMDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F430C1F457C1800448887 /* AXNIMDemo.xcdatamodeld */; };
 		8A2F43101F457C1800448887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F430F1F457C1800448887 /* Assets.xcassets */; };
 		8A2F43131F457C1800448887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F43111F457C1800448887 /* LaunchScreen.storyboard */; };
+		B42025BECAE5A3FD92B5F273 /* libPods-AXNIMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66234162708BA0FFDDDC6784 /* libPods-AXNIMDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17265BF9D69A6CD11D19B2E1 /* Pods-AXNIMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXNIMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AXNIMDemo/Pods-AXNIMDemo.release.xcconfig"; sourceTree = "<group>"; };
+		66234162708BA0FFDDDC6784 /* libPods-AXNIMDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AXNIMDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2F42FD1F457C1800448887 /* AXNIMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXNIMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2F43011F457C1800448887 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A2F43031F457C1800448887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		8A2F430F1F457C1800448887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A2F43121F457C1800448887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A2F43141F457C1800448887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2BCFAA8CD4C779E24963BA4 /* Pods-AXNIMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXNIMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AXNIMDemo/Pods-AXNIMDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42025BECAE5A3FD92B5F273 /* libPods-AXNIMDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		489B12326CAD09BC693FC193 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2BCFAA8CD4C779E24963BA4 /* Pods-AXNIMDemo.debug.xcconfig */,
+				17265BF9D69A6CD11D19B2E1 /* Pods-AXNIMDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79D63F2548D285F398B020E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66234162708BA0FFDDDC6784 /* libPods-AXNIMDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A2F42F41F457C1800448887 = {
 			isa = PBXGroup;
 			children = (
 				8A2F42FF1F457C1800448887 /* AXNIMDemo */,
 				8A2F42FE1F457C1800448887 /* Products */,
+				489B12326CAD09BC693FC193 /* Pods */,
+				79D63F2548D285F398B020E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A2F43171F457C1800448887 /* Build configuration list for PBXNativeTarget "AXNIMDemo" */;
 			buildPhases = (
+				B50398DC32803E277D21ED5E /* [CP] Check Pods Manifest.lock */,
 				8A2F42F91F457C1800448887 /* Sources */,
 				8A2F42FA1F457C1800448887 /* Frameworks */,
 				8A2F42FB1F457C1800448887 /* Resources */,
+				FAC886A665B8B598ADB33879 /* [CP] Embed Pods Frameworks */,
+				9A21A81396FB9D5E291FBA4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +175,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A21A81396FB9D5E291FBA4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AXNIMDemo/Pods-AXNIMDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B50398DC32803E277D21ED5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC886A665B8B598ADB33879 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AXNIMDemo/Pods-AXNIMDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A2F42F91F457C1800448887 /* Sources */ = {
@@ -275,6 +350,7 @@
 		};
 		8A2F43181F457C1800448887 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2BCFAA8CD4C779E24963BA4 /* Pods-AXNIMDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 876E7QRKZN;
@@ -287,6 +363,7 @@
 		};
 		8A2F43191F457C1800448887 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17265BF9D69A6CD11D19B2E1 /* Pods-AXNIMDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 876E7QRKZN;
